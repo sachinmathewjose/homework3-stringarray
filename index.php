@@ -109,6 +109,7 @@ class main {
 		$this->explodeString();
 		$this->wordCountString();
 		$this->similarString();
+		$this->strString();
 		echo "<hr><hr>";
 	}
 
@@ -138,6 +139,14 @@ class main {
 		echo "<p>This function finds the similarity between two strings:<p>";
 		$str = "This is another sample string";
 		echo "The similarity between \"".$this->sampleString."\" and \"".$str."\" is : ".similar_text($this->sampleString,$str);
+		echo "<br><br>";
+	}
+
+	public function strString() {
+		echo "<h4>5. Function :<b> strstr()</b></h4>";
+		echo "<p>This function searches for the first occurrence of a string inside another string<p>";
+		$str = "SAM";
+		echo "The string after the first occurance of\"".$str."\" is:".strstr($this->sampleString, $str);
 		echo "<br><br>";
 	}
 
