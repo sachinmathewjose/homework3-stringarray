@@ -17,6 +17,7 @@ class main {
 		$this->rancArray();
 		$this->pushArray();
 		$this->searchArray();
+		$this->shuffleArray();
 		echo "<hr><hr>";
 	}
 
@@ -66,11 +67,21 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function shuffleArray() {
+		echo "<h4>7. Function : <b> shuffle()</b></h4>";
+		echo "<p>This function shuffles the array:<p>";
+		shuffle($this->sampleArray);
+		print_r($this->sampleArray);
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
+
+	
 
 
 
