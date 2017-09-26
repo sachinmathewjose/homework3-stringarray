@@ -5,6 +5,7 @@ $obj->stringFunctions();
 
 class main {
 	public $sampleArray = array(1,2,3,4,5,6,7,8,9,0);
+	public $sampleString = "This is a SAMPLE String";
 	public function __construct() {
 		echo "<h1>Welcome to the Demostration of Array and String functions</h1>";
 	}
@@ -100,17 +101,22 @@ class main {
 		echo "<br><br>";
 	}
 
-
-
 #*********************************************************************************************************
 
 	public function stringFunctions() {
 		echo '<h3>String functions: </h3><hr>';
-
+		$this->explodeString();
 		echo "<hr><hr>";
 	}
 
-	public function pArray() {
+	public function explodeString() {
+		echo "<h4>1. Function :<b> explode()</b></h4>";
+		echo "<p>This function seperate the string into an array <p>";
+		print_r(explode(" ",$this->sampleString));
+		echo "<br><br>";
+	}
+
+	public function pString() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
