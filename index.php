@@ -4,15 +4,18 @@ $obj->arrayFunctions();
 $obj->stringFunctions();
 
 class main {
-	public $sampleArray = array('1,2,3,4,5,6,7,8,9,0');
+	public $sampleArray = array(1,2,3,4,5,6,7,8,9,0);
 	public function __construct() {
+		#$sampleArray = {1,2,3,4,5,6,7,8,9,0};
 		echo "<h1>Welcome to the Demostration of Array and String functions</h1>";
 	}
 
 	public function arrayFunctions() {
 		echo '<h3>Array functions: </h3><hr>';
 		$this->printrArray();
-		#$this->sumArray();
+		$this->sumArray();
+
+		echo "<hr><hr>";
 	}
 
 	public function printrArray() {
@@ -24,7 +27,9 @@ class main {
 
 	public function sumArray() {
 		echo "<h4>2. Function :<b> array_sum()</b></h4>";
-		echo "<p> <p>";
+		echo "<p>This functions finds the sum of elements in the array <p>";
+		echo 'sum is : ';
+		echo array_sum($this->sampleArray);
 		echo "<br><br>";
 	}
 
