@@ -18,6 +18,7 @@ class main {
 		$this->pushArray();
 		$this->searchArray();
 		$this->shuffleArray();
+		$this->sliceArray();
 		echo "<hr><hr>";
 	}
 
@@ -75,13 +76,18 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function sliceArray() {
+		echo "<h4>8. Function :<b> array_slice()</b></h4>";
+		echo "<p>THis function slices the array: <p>";
+		print_r(array_slice($this->sampleArray,2,4));
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
-
-	
 
 
 
