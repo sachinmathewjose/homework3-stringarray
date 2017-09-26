@@ -89,7 +89,7 @@ class main {
 	public function shiftArray() {
 		echo "<h4>9. Function :<b> array_shift()</b></h4>";
 		echo "<p>This function removes and return the first element from the array<p>";
-		echo "removes element :".array_shift($this->sampleArray)."<br>";
+		echo "removed element :".array_shift($this->sampleArray)."<br>";
 		print_r($this->sampleArray);
 		echo "<br><br>";
 	}
@@ -171,7 +171,7 @@ class main {
 
 	public function ucwordString() {
 		echo "<h4>8. Function :<b> ucwords()</b></h4>";
-		echo "<p>This function ppercase the first character of each word in a string<p>";
+		echo "<p>This function upercase the first character of each word in a string<p>";
 		echo ucwords($this->sampleString);
 		echo "<br><br>";
 	}
