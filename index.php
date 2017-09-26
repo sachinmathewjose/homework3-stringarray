@@ -111,6 +111,8 @@ class main {
 		$this->similarString();
 		$this->strString();
 		$this->strrevString();
+		$this->wordwrapString();
+		$this->ucwordString();
 		echo "<hr><hr>";
 	}
 
@@ -155,6 +157,20 @@ class main {
 		echo "<h4>6. Function :<b> strrev</b></h4>";
 		echo "<p>This function finds the reverse of a string :<p>";
 		echo "The reverse of a string: ".strrev($this->sampleString);
+		echo "<br><br>";
+	}
+
+	public function wordwrapString() {
+		echo "<h4>7. Function :<b> wordwrap()</b></h4>";
+		echo "<p>This function finds wraps a string into new lines when it reaches a specific length<p>";
+		echo wordwrap($this->sampleString,5,"<br>\n",TRUE);
+		echo "<br><br>";
+	}
+
+	public function ucwordString() {
+		echo "<h4>8. Function :<b> ucwords()</b></h4>";
+		echo "<p>This function ppercase the first character of each word in a string<p>";
+		echo ucwords($this->sampleString);
 		echo "<br><br>";
 	}
 
