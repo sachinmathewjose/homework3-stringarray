@@ -6,7 +6,6 @@ $obj->stringFunctions();
 class main {
 	public $sampleArray = array(1,2,3,4,5,6,7,8,9,0);
 	public function __construct() {
-		#$sampleArray = {1,2,3,4,5,6,7,8,9,0};
 		echo "<h1>Welcome to the Demostration of Array and String functions</h1>";
 	}
 
@@ -14,7 +13,7 @@ class main {
 		echo '<h3>Array functions: </h3><hr>';
 		$this->printrArray();
 		$this->sumArray();
-
+		$this->sortArray();
 		echo "<hr><hr>";
 	}
 
@@ -33,12 +32,19 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function sortArray() {
+		echo "<h4>3. Function :<b> rsort()</b></h4>";
+		echo "<p>This function sorts the array in reverse order: <p>";
+		rsort($this->sampleArray);
+		print_r($this->sampleArray);
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
-
 
 
 #*********************************************************************************************************
