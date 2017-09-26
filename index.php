@@ -110,6 +110,7 @@ class main {
 		$this->wordCountString();
 		$this->similarString();
 		$this->strString();
+		$this->strrevString();
 		echo "<hr><hr>";
 	}
 
@@ -147,6 +148,13 @@ class main {
 		echo "<p>This function searches for the first occurrence of a string inside another string<p>";
 		$str = "SAM";
 		echo "The string after the first occurance of\"".$str."\" is:".strstr($this->sampleString, $str);
+		echo "<br><br>";
+	}
+
+	public function strrevString() {
+		echo "<h4>6. Function :<b> strrev</b></h4>";
+		echo "<p>This function finds the reverse of a string :<p>";
+		echo "The reverse of a string: ".strrev($this->sampleString);
 		echo "<br><br>";
 	}
 
