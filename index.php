@@ -106,19 +106,27 @@ class main {
 	public function stringFunctions() {
 		echo '<h3>String functions: </h3><hr>';
 		$this->explodeString();
+		$this->wordCountString();
 		echo "<hr><hr>";
 	}
 
+	public function pString() {
+		echo "<h4>2. Function :<b> </b></h4>";
+		echo "<p>This function <p>";
+		echo " ";
+		echo "<br><br>";
+	}
 	public function explodeString() {
-		echo "<h4>1. Function :<b> explode()</b></h4>";
+		echo "<h4>2. Function :<b> explode()</b></h4>";
 		echo "<p>This function seperate the string into an array <p>";
 		print_r(explode(" ",$this->sampleString));
 		echo "<br><br>";
 	}
 
-	public function pString() {
-		echo "<h4>2. Function :<b> </b></h4>";
-		echo "<p> <p>";
+	public function wordCountString() {
+		echo "<h4>3. Function :<b> str_word_count()</b></h4>";
+		echo "<p>This function counts the number of words in the string <p>";
+		echo "number of words: ".str_word_count($this->sampleString);
 		echo "<br><br>";
 	}
 }
