@@ -19,6 +19,7 @@ class main {
 		$this->searchArray();
 		$this->shuffleArray();
 		$this->sliceArray();
+		$this->shiftArray();
 		echo "<hr><hr>";
 	}
 
@@ -80,6 +81,14 @@ class main {
 		echo "<h4>8. Function :<b> array_slice()</b></h4>";
 		echo "<p>THis function slices the array: <p>";
 		print_r(array_slice($this->sampleArray,2,4));
+		echo "<br><br>";
+	}
+
+	public function shiftArray() {
+		echo "<h4>9. Function :<b> array_shift()</b></h4>";
+		echo "<p>This function removes and return the first element from the array<p>";
+		echo "removes element :".array_shift($this->sampleArray)."<br>";
+		print_r($this->sampleArray);
 		echo "<br><br>";
 	}
 
