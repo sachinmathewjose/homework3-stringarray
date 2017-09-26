@@ -15,6 +15,7 @@ class main {
 		$this->sumArray();
 		$this->sortArray();
 		$this->rancArray();
+		$this->pushArray();
 		echo "<hr><hr>";
 	}
 
@@ -48,13 +49,19 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function pushArray() {
+		echo "<h4>5. Function :<b> array_push()</b></h4>";
+		echo "<p>This function adds an element at the end of the string <p>";
+		array_push($this->sampleArray,10);
+		print_r($this->sampleArray);
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
-
-
 
 
 #*********************************************************************************************************
