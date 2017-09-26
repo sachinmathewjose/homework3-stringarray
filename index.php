@@ -114,6 +114,7 @@ class main {
 		$this->wordwrapString();
 		$this->ucwordString();
 		$this->tolowerString();
+		$this->repeatString();
 		echo "<hr><hr>";
 	}
 
