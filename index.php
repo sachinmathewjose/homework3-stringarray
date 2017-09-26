@@ -113,6 +113,7 @@ class main {
 		$this->strrevString();
 		$this->wordwrapString();
 		$this->ucwordString();
+		$this->tolowerString();
 		echo "<hr><hr>";
 	}
 
@@ -174,10 +175,17 @@ class main {
 		echo "<br><br>";
 	}
 
-	public function pString() {
-		echo "<h4>2. Function :<b> similar_text()</b></h4>";
-		echo "<p>This function finds the<p>";
-		echo " ";
+	public function tolowerString() {
+		echo "<h4>9. Function :<b> strtolower()</b></h4>";
+		echo "<p>This function make a string lowercase :<p>";
+		echo strtolower($this->sampleString);
+		echo "<br><br>";
+	}
+
+	public function repeatString() {
+		echo "<h4>10. Function :<b> str_repeat()</b></h4>";
+		echo "<p>This function repeats a string a specified number of times.<p>";
+		echo str_repeat($this->sampleString,2);
 		echo "<br><br>";
 	}
 }
