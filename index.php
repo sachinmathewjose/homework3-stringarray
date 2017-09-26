@@ -14,6 +14,7 @@ class main {
 		$this->printrArray();
 		$this->sumArray();
 		$this->sortArray();
+		$this->rancArray();
 		echo "<hr><hr>";
 	}
 
@@ -40,11 +41,20 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function rancArray() {
+		echo "<h4>4. Function :<b> array_rand()</b></h4>";
+		echo "<p>This function returns a random element from the array<p>";
+		echo "random number :".array_rand($this->sampleArray);
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
+
+
 
 
 #*********************************************************************************************************
