@@ -16,6 +16,7 @@ class main {
 		$this->sortArray();
 		$this->rancArray();
 		$this->pushArray();
+		$this->searchArray();
 		echo "<hr><hr>";
 	}
 
@@ -57,11 +58,20 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function searchArray() {
+		echo "<h4>6. Function :<b> array_search()</b></h4>";
+		echo "<p>This function searches for an element<p>";
+		$elem = 10;
+		echo "position of element ".$elem." is at: ".array_search($elem, $this->sampleArray);
+		echo "<br><br>";
+	}
+
 	public function pArray() {
 		echo "<h4>2. Function :<b> </b></h4>";
 		echo "<p> <p>";
 		echo "<br><br>";
 	}
+
 
 
 #*********************************************************************************************************
