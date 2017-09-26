@@ -20,6 +20,7 @@ class main {
 		$this->shuffleArray();
 		$this->sliceArray();
 		$this->shiftArray();
+		$this->chunkArray();
 		echo "<hr><hr>";
 	}
 
@@ -92,9 +93,10 @@ class main {
 		echo "<br><br>";
 	}
 
-	public function pArray() {
-		echo "<h4>2. Function :<b> </b></h4>";
-		echo "<p> <p>";
+	public function chunkArray() {
+		echo "<h4>10. Function :<b> array_chunk()</b></h4>";
+		echo "<p>This function splits the array into chunks of new arrays :<p>";
+		print_r(array_chunk($this->sampleArray,3));
 		echo "<br><br>";
 	}
 
@@ -104,6 +106,14 @@ class main {
 
 	public function stringFunctions() {
 		echo '<h3>String functions: </h3><hr>';
+
+		echo "<hr><hr>";
+	}
+
+	public function pArray() {
+		echo "<h4>2. Function :<b> </b></h4>";
+		echo "<p> <p>";
+		echo "<br><br>";
 	}
 }
 
