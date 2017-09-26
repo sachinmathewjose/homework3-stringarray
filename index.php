@@ -108,6 +108,7 @@ class main {
 		$this->printString();	
 		$this->explodeString();
 		$this->wordCountString();
+		$this->similarString();
 		echo "<hr><hr>";
 	}
 
@@ -132,9 +133,17 @@ class main {
 		echo "<br><br>";
 	}
 
+	public function similarString() {
+		echo "<h4>4. Function :<b> similar_text()</b></h4>";
+		echo "<p>This function finds the similarity between two strings:<p>";
+		$str = "This is another sample string";
+		echo "The similarity between \"".$this->sampleString."\" and \"".$str."\" is : ".similar_text($this->sampleString,$str);
+		echo "<br><br>";
+	}
+
 	public function pString() {
-		echo "<h4>2. Function :<b> </b></h4>";
-		echo "<p>This function <p>";
+		echo "<h4>2. Function :<b> similar_text()</b></h4>";
+		echo "<p>This function finds the<p>";
 		echo " ";
 		echo "<br><br>";
 	}
